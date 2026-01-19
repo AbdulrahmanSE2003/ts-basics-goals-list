@@ -1,10 +1,10 @@
-import { useRef, type FormEvent } from "react";
+import { useRef, type FC, type FormEvent } from "react";
 
 interface NewGoalProps {
   onAdd: (goal: string, summery: string) => void;
 }
 
-const NewGoal = ({ onAdd }: NewGoalProps) => {
+const NewGoal: FC<NewGoalProps> = ({ onAdd }) => {
   const goal = useRef<HTMLInputElement>(null);
   const summery = useRef<HTMLInputElement>(null);
 
