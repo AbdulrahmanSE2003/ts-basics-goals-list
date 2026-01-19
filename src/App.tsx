@@ -13,11 +13,11 @@ export type CourseGoals = {
 export default function App() {
   const [goals, setGoals] = useState<CourseGoals[]>([]);
 
-  function handleAddGoal(title: string, description: string) {
+  function handleAddGoal(goal: string, summery: string) {
     setGoals((goals) => {
       const newGoal = {
-        title: title,
-        description: description,
+        title: goal,
+        description: summery,
         id: Math.random(),
       };
       return [...goals, newGoal];

@@ -1,7 +1,7 @@
 import { useRef, type FormEvent } from "react";
 
 interface NewGoalProps {
-  onAdd: (title: string, desc: string) => void;
+  onAdd: (goal: string, summery: string) => void;
 }
 
 const NewGoal = ({ onAdd }: NewGoalProps) => {
