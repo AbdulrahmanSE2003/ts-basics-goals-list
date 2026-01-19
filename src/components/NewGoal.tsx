@@ -15,6 +15,7 @@ const NewGoal = ({ onAdd }: NewGoalProps) => {
     const enteredSummery = summery.current!.value;
 
     onAdd(enteredGoal, enteredSummery);
+    e.currentTarget.reset();
   }
 
   return (
